@@ -23,6 +23,11 @@
   line-height: 20px;
   color: #fff;
 }
+.dragheader::after {
+    content: '✥';
+    font-size: 14px;
+    float: right;
+}
 .paginator-button {
   display: flex;
   flex-grow: 1;
