@@ -20,7 +20,11 @@
     	  		"*://*/*p=*"
     	  	],
     	  	"css": ["paginator.css"],
-      		"js": ["content-script.js"]
+      		"js": [
+				"/content-scripts/element-draggable.js",
+				"/content-scripts/pagination-helper.js",
+				"/content-scripts/event-handler.js"
+			]
     	}
   	],
 	"permissions": ["activeTab","<all_urls>","webRequest","webRequestBlocking"]

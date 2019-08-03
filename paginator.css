@@ -1,6 +1,10 @@
 .draggable {
   position:fixed !important;
   position: absolute; /*ie6 */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 196px;
   z-index: 16777272;
   background-color: #f1f1f1;
   border: 1px solid #d3d3d3;
@@ -11,19 +15,22 @@
 .dragheader {
   padding: 4px;
   cursor: move;
+  flex: 0 1 100%;
   z-index: 16777271;
-  min-height: 24px;
+  min-height: 20px;
   background: linear-gradient(60deg, #29323c 0%, #485563 100%);;
   background-color: #2196F3;
-  line-height: 24px;
+  line-height: 20px;
   color: #fff;
 }
 .paginator-button {
-  width: 42px;
-  height: 42px;
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+  max-width: 100%;
+  cursor: pointer;
+  justify-content: center;
   text-align: center;
-  display: inline;
-  margin-top: 10px;
   padding: 3px;
 }
 
@@ -37,4 +44,14 @@
   background-color: #303030;
   color: white;
   font-size: 1.5em;
+}
+
+input[type="number"] {
+  width: 60px;
+  line-height: 16px;
+  text-indent: 10px;
+  font-weight: normal;
+  font-size: 14px;
+  margin: 0px;
+  border: 2px solid #8d8d8d;
 }
